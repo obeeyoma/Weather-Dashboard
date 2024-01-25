@@ -30,3 +30,19 @@ $(document).ready(function () {
   var modalTitle = $(".modal-title");
   var modalBodyText = $(".modal-body").children().eq(0);
 });
+// Click button to hide modal
+$("#close-btn").on("click", function () {
+  hideModal();
+});
+//  Click (X) icon to hide modal
+$(".btn-close").on("click", function () {
+  hideModal();
+});
+// Function to show modal
+function showModal() {
+  $(".modal").show();
+}
+// function to hide modal
+function hideModal() {
+  $(".modal").hide();
+}
