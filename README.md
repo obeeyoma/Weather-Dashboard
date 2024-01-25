@@ -8,8 +8,8 @@ Weather-Dashboard is a simple application that allows a user to enter a city nam
 
 ## Screenshot
 
-![Weather-Dashboard](assets/images/screenshot-of-work-day-scheduler.png)
+![Weather-Dashboard](assets\images\screenshot-of-weather-dashboard-app.PNG)
 
 ## Link to website
 
-[Weather-Dashboard](https://obeeyoma.github.io/work-day-scheduler-app/)
+[Weather-Dashboard](https://obeeyoma.github.io/Weather-Dashboard/)
