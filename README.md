@@ -8,7 +8,7 @@ Weather-Dashboard is a simple application that allows a user to enter a city nam
 
 ## Screenshot
 
-![Weather-Dashboard](assets\images\screenshot-of-weather-dashboard-app.PNG)
+![Weather-Dashboard](assets/images/screenshot-of-weather-dashboard-app.PNG)
 
 ## Link to website
 
