@@ -72,7 +72,8 @@ $(document).ready(function () {
 
         // Populate dashboard content from saved results
         // Populate current day weather section
-        var todayWeather = $("<div>");
+          var todayWeather = $("<div>");
+          todayWeather.addClass("today-weather");
 
         // container div for cityName, todayDate, todayIcon
 
@@ -116,7 +117,7 @@ $(document).ready(function () {
         // From search results
         for (var i = 1; i < savedResults.length; i++) {
           var forecastWeather = $("<div>");
-          forecastWeather.addClass("col m-1 forecast-weather");
+          forecastWeather.addClass("col m-3 forecast-weather");
           forecastDate = $("<h3>");
           forecastDate.text(savedResults[i].date);
           forecastIcon = $("<img>");
@@ -163,7 +164,8 @@ $(document).ready(function () {
             var dayWeather = data.list;
 
             //Create div for today weather
-            var todayWeather = $("<div>");
+              var todayWeather = $("<div>");
+              todayWeather.addClass("today-weather");
 
             // Create container div for cityName, todayDate, todayIcon
 
@@ -214,7 +216,7 @@ $(document).ready(function () {
             // From search results
             for (var i = 1; i < dayWeather.length; i++) {
               var forecastWeather = $("<div>");
-              forecastWeather.addClass("col m-1 forecast-weather");
+              forecastWeather.addClass("col m-3 forecast-weather");
               forecastDate = $("<h3>");
               forecastDate.text(
                 dayjs(dayWeather[i].dt_txt).format("DD/MM/YYYY")
@@ -254,7 +256,7 @@ $(document).ready(function () {
               // Create an object
               var resultObject = {
                 city: data.city.name,
-                date: dayjs(dayWeather.dt_txt).format("DD/MM/YYYY"),
+                date: dayjs(dayWeather[j].dt_txt).format("DD/MM/YYYY"),
                 icon: [
                   "https://openweathermap.org/img/wn/" +
                     dayWeather[j].weather[0].icon +
