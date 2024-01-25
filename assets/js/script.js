@@ -25,4 +25,8 @@ $(document).ready(function () {
 
   // Array for results of data fetch
   var results = [];
+
+  // Modal
+  var modalTitle = $(".modal-title");
+  var modalBodyText = $(".modal-body").children().eq(0);
 });
