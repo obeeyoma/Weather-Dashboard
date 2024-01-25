@@ -1,3 +1,5 @@
+// Import API key from config.js
+import { key } from "./config";
 $(document).ready(function () {
   // Variables for API url, search string , query
   var apiURL = "https://api.openweathermap.org/data/2.5/forecast?";
