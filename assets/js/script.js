@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Variables for API url, search string , query
   var apiURL = "https://api.openweathermap.org/data/2.5/forecast?";
-  var key = ",uk&appid=4826468e9fb284c1f1eb954d7b34649a";
+  var key = ""
   var searchString = "";
   var queryURL;
 
