@@ -108,7 +108,7 @@ function fetchData(searchstr) {
 
         if (dataHour === "12") {
           let eachDataset = weatherData[i];
-          let weatherBox = $("<div>").addClass("col");
+          let weatherBox = $("<div>").addClass("col my-2");
           forecastSection.append(weatherBox);
           let weatherCard = $("<div>").addClass("card-text forecast-weather");
           weatherBox.append(weatherCard);
