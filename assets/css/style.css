@@ -1,7 +1,6 @@
 /* Weather display styles */
 .today-weather{
     border: 1px solid rgb(19, 18, 18);
-    padding-left: 5px;
 }
 .forecast-weather {
     background-color: rgb(2, 2, 46);
