@@ -109,7 +109,7 @@ function fetchData(searchstr) {
           let weatherBox = $("<div>").addClass("col");
           forecastSection.append(weatherBox);
           let weatherCard = $("<div>").addClass(
-            "card-text forecast-weather text-white"
+            "card-text forecast-weather"
           );
           weatherBox.append(weatherCard);
           let cardBody = $("<div>").addClass("card-body");
@@ -139,7 +139,7 @@ function showTodayWeather(data) {
   let todayWeather = data.list[0];
   // Today section content
   let todayDate = dayjs(todayWeather.dt_txt).format("D/M/YYYY");
-  todaySection.addClass("card-body card today-weather");
+  todaySection.addClass("card-body card");
   let cityName = data.city.name;
   let cityNameEl = $("<h2>")
     .addClass("card-title")
