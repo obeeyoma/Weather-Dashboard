@@ -36,6 +36,8 @@ function showSearchHistory() {
     let searchedCityBtn = $("<button>").addClass(
       "btn btn-secondary city-search-button mt-2 form-control"
     );
+    // Capitalize first letter
+    city = city[0].toUpperCase() + city.slice(1);
     searchedCityBtn.text(city);
     searchHistory.append(searchedCityBtn);
     // When searched item btn is clicked fetch data
@@ -108,9 +110,7 @@ function fetchData(searchstr) {
           let eachDataset = weatherData[i];
           let weatherBox = $("<div>").addClass("col");
           forecastSection.append(weatherBox);
-          let weatherCard = $("<div>").addClass(
-            "card-text forecast-weather"
-          );
+          let weatherCard = $("<div>").addClass("card-text forecast-weather");
           weatherBox.append(weatherCard);
           let cardBody = $("<div>").addClass("card-body");
           weatherCard.append(cardBody);
@@ -173,4 +173,3 @@ function displayInSection(array, section) {
     .text("Humidity: " + humidity + "%");
   section.append(humidityEl);
 }
-
