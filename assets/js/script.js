@@ -117,10 +117,6 @@ function fetchData(searchstr) {
           let date = dayjs(eachDataset.dt_txt).format("D/M/YYYY");
           let dateEl = $("<h4>").addClass("card-title").text(date);
           cardBody.append(dateEl);
-          let dayOfWeek = $("<h3>").text(
-            dayjs(eachDataset.dt_txt).format("dddd")
-          );
-          cardBody.append(dayOfWeek);
           let iconCode = eachDataset.weather[0].icon;
           let iconImg = $("<img>");
           let iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
