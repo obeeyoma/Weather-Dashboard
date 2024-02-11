@@ -1,8 +1,3 @@
-/* Override bootstrap class */
-.bg-dark {
-    background-color: rgb(19, 19, 63) !important;
-}
-
 /* Weather display styles */
 .today-weather{
     border: 1px solid rgb(19, 18, 18);
